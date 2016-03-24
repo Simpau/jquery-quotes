@@ -18,7 +18,7 @@
         <a class="nav-link" href="author.html">Author</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
           New
         </a>
       </li>
@@ -39,6 +39,43 @@
     </div>
   </div>
 
-  <!-- insert JavaScript here -->
+  <div class="bd-example">
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="modal-title">Nouvelle citation</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="message-text1" class="form-control-label">Citation</label>
+              <textarea class="form-control" id="message-text1"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="form-control-label">Auteur</label>
+              <input class="form-control" id="message-text" placeholder="Albert Einstein"></input>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Sauvegarder</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="javascripts/jquery-2.1.4.min.js"></script>
+<script src="javascripts/tether.min.js"></script>
+<script src="javascripts/bootstrap.js"></script>
+<script src="javascripts/quotes.js"></script>
 </body>
 </html>
+
+
